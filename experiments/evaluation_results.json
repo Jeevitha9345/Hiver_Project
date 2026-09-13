@@ -1,6 +1,6 @@
 {
   "benchmark_date": "2026-09-13",
-  "elapsed_seconds": 31.7,
+  "elapsed_seconds": 35.7,
   "evaluation_samples": 200,
   "intent_classification": {
     "majority_baseline": {
