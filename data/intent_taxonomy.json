@@ -1,0 +1,148 @@
+﻿{
+  "brand": "AmazonHelp",
+  "version": "1.0",
+  "num_intents": 7,
+  "taxonomy": [
+    {
+      "name": "delivery_tracking_delay",
+      "definition": "Customer inquiring about package location, late/missed delivery dates, tracking updates, carrier logistics, or marked delivered but not received.",
+      "inclusion_criteria": [
+        "Mentions tracking number, carrier (USPS, UPS, DPD, Hermes, etc.)",
+        "Order is late, delayed, or stuck in transit",
+        "Status says 'delivered' but package is missing from front door/porch",
+        "Queries about estimated arrival time or driver access codes"
+      ],
+      "exclusion_criteria": [
+        "Customer explicitly demands to return a damaged item (use return_and_replacement)",
+        "Customer asking to cancel the order before delivery (use refund_and_cancellation)",
+        "Severe rage demanding supervisor/legal action for repeated support failures (use service_complaint_escalation)"
+      ],
+      "examples": [
+        "Where is my package? The tracking has not updated in 3 days.",
+        "Tracking says delivered to front door but nothing is there.",
+        "My order was supposed to arrive yesterday before 8pm.",
+        "Why did the carrier claim access code was needed when I provided it?"
+      ]
+    },
+    {
+      "name": "return_and_replacement",
+      "definition": "Customer wanting to return an item, reporting broken/defective/damaged goods, receiving the wrong item, or requesting a replacement.",
+      "inclusion_criteria": [
+        "Item arrived broken, spoiled, wet, or defective",
+        "Wrong product, color, or quantity was delivered",
+        "Asking how to return an item or generate a return label/pickup",
+        "Requesting a replacement unit for a faulty order"
+      ],
+      "exclusion_criteria": [
+        "Asking solely for a refund on a canceled order without return (use refund_and_cancellation)",
+        "Item has not arrived yet (use delivery_tracking_delay)"
+      ],
+      "examples": [
+        "The ceramic mug arrived completely shattered.",
+        "I ordered size 10 shoes but you sent size 8. How do I exchange this?",
+        "How do I schedule a return pickup for this defective blender?",
+        "Received a completely different item than what I paid for."
+      ]
+    },
+    {
+      "name": "refund_and_cancellation",
+      "definition": "Customer asking to cancel an order, inquiring about refund processing timelines, or missing refund amounts for canceled/returned goods.",
+      "inclusion_criteria": [
+        "Asking to cancel an active order before or during shipment",
+        "Complaining that refund has not appeared in bank account/card",
+        "Asking when the refund for a returned item will be processed",
+        "Requesting money back due to canceled order"
+      ],
+      "exclusion_criteria": [
+        "Initial return inquiry with item still in possession (use return_and_replacement)",
+        "Unauthorized fraudulent transaction on account (use account_and_payment_security)"
+      ],
+      "examples": [
+        "Please cancel my order #123-456789 immediately.",
+        "I returned the laptop 2 weeks ago and still haven't received my refund.",
+        "When will the refund reflect in my credit card?",
+        "My order was canceled by seller but money was deducted."
+      ]
+    },
+    {
+      "name": "prime_and_subscription",
+      "definition": "Inquiries, charges, or technical problems related to Amazon Prime membership, Prime Video, Prime Music, or Kindle Unlimited subscriptions.",
+      "inclusion_criteria": [
+        "Unexpected annual/monthly Prime membership charge",
+        "Requests to cancel or pause Prime subscription",
+        "Complaints about Prime 2-day/same-day delivery benefit failures",
+        "Technical errors accessing Prime Video, Firestick apps, or Prime Music"
+      ],
+      "exclusion_criteria": [
+        "General delivery delays on non-Prime items without subscription complaint (use delivery_tracking_delay)",
+        "Stolen account credentials (use account_and_payment_security)"
+      ],
+      "examples": [
+        "I was charged $119 for Amazon Prime without my consent.",
+        "How do I cancel my Prime subscription and get a prorated refund?",
+        "Prime Video is showing error code 5004 on my smart TV.",
+        "Why am I paying for Prime when deliveries take a week?"
+      ]
+    },
+    {
+      "name": "account_and_payment_security",
+      "definition": "Account authentication issues, OTP/verification delays, password reset, payment method declines, gift card balance issues, or fraud/unauthorized access.",
+      "inclusion_criteria": [
+        "Unable to sign in or locked out of account",
+        "Not receiving 2FA SMS/email verification OTP codes",
+        "Payment declined, card transaction failed, or unexpected charge on unknown account",
+        "Gift card code not working or balance not applied"
+      ],
+      "exclusion_criteria": [
+        "Routine subscription renewal charge for Prime (use prime_and_subscription)",
+        "Refund processing query for legitimate return (use refund_and_cancellation)"
+      ],
+      "examples": [
+        "I cannot log in because the OTP is not coming to my registered phone.",
+        "My card was charged $45 by Amazon but I placed no order.",
+        "Why is my account placed on hold when I try to checkout?",
+        "Gift card code says already redeemed but balance is zero."
+      ]
+    },
+    {
+      "name": "service_complaint_escalation",
+      "definition": "Customer expressing acute dissatisfaction with customer service reps, unresolved repeated contacts, unfulfilled promises, or demanding human management.",
+      "inclusion_criteria": [
+        "Repeated complaints ('4th time contacting you', 'no one is resolving this')",
+        "Agent rudeness, disconnected chats, or broken callback commitments",
+        "Explicit demand for a human supervisor, manager, or legal/regulatory escalation",
+        "Strong emotional distress/anger regarding service failure"
+      ],
+      "exclusion_criteria": [
+        "Routine delivery delay without customer service complaint (use delivery_tracking_delay)",
+        "Standard refund inquiry without prior representative failure (use refund_and_cancellation)"
+      ],
+      "examples": [
+        "Your customer care is pathetic, 3 agents disconnected my chat today!",
+        "I've been following up for 3 weeks and getting nothing but false promises.",
+        "I want to speak with a human manager immediately.",
+        "Worst customer service ever, nobody is responding to my emails."
+      ]
+    },
+    {
+      "name": "general_product_inquiry",
+      "definition": "General inquiries about product availability, stock restock dates, pricing discrepancies, promo codes, seller queries, or website navigation.",
+      "inclusion_criteria": [
+        "Asking when an item will be back in stock or available for pre-order",
+        "Questions regarding promotional discounts, coupons, or lightning deals",
+        "Clarifications on product specifications, warranty, or manufacturer support",
+        "General questions on policy or international shipping availability"
+      ],
+      "exclusion_criteria": [
+        "Specific problems with an already placed order (use delivery_tracking_delay or return_and_replacement)",
+        "Complaints about Prime benefits (use prime_and_subscription)"
+      ],
+      "examples": [
+        "When will the Kindle Paperwhite be back in stock in the UK?",
+        "Does the advertised discount code apply to third-party sellers?",
+        "Can this product be shipped to Australia?",
+        "Is there a manufacturer warranty included with this refurbished laptop?"
+      ]
+    }
+  ]
+}

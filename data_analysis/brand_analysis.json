@@ -1,0 +1,92 @@
+[
+  {
+    "brand": "AmazonHelp",
+    "total_support_tweets": 169840,
+    "reconstructed_pairs": 168814,
+    "avg_customer_msg_words": 19.3,
+    "dm_deflection_rate_pct": 0.82,
+    "customer_vocabulary_size": 91987,
+    "suitability_score": 289.51
+  },
+  {
+    "brand": "AppleSupport",
+    "total_support_tweets": 106860,
+    "reconstructed_pairs": 106646,
+    "avg_customer_msg_words": 18.8,
+    "dm_deflection_rate_pct": 52.56,
+    "customer_vocabulary_size": 48188,
+    "suitability_score": 269.26
+  },
+  {
+    "brand": "Uber_Support",
+    "total_support_tweets": 56270,
+    "reconstructed_pairs": 56160,
+    "avg_customer_msg_words": 21.1,
+    "dm_deflection_rate_pct": 35.15,
+    "customer_vocabulary_size": 30475,
+    "suitability_score": 263.41
+  },
+  {
+    "brand": "Delta",
+    "total_support_tweets": 42253,
+    "reconstructed_pairs": 42114,
+    "avg_customer_msg_words": 19.7,
+    "dm_deflection_rate_pct": 17.12,
+    "customer_vocabulary_size": 26191,
+    "suitability_score": 259.05
+  },
+  {
+    "brand": "AmericanAir",
+    "total_support_tweets": 36764,
+    "reconstructed_pairs": 36531,
+    "avg_customer_msg_words": 20.6,
+    "dm_deflection_rate_pct": 16.78,
+    "customer_vocabulary_size": 28889,
+    "suitability_score": 257.69
+  },
+  {
+    "brand": "Tesco",
+    "total_support_tweets": 38573,
+    "reconstructed_pairs": 38468,
+    "avg_customer_msg_words": 20.3,
+    "dm_deflection_rate_pct": 26.88,
+    "customer_vocabulary_size": 26247,
+    "suitability_score": 256.2
+  },
+  {
+    "brand": "British_Airways",
+    "total_support_tweets": 29361,
+    "reconstructed_pairs": 29290,
+    "avg_customer_msg_words": 21.9,
+    "dm_deflection_rate_pct": 14.04,
+    "customer_vocabulary_size": 20319,
+    "suitability_score": 255.75
+  },
+  {
+    "brand": "SpotifyCares",
+    "total_support_tweets": 43265,
+    "reconstructed_pairs": 43092,
+    "avg_customer_msg_words": 17.9,
+    "dm_deflection_rate_pct": 30.83,
+    "customer_vocabulary_size": 25419,
+    "suitability_score": 254.04
+  },
+  {
+    "brand": "comcastcares",
+    "total_support_tweets": 33031,
+    "reconstructed_pairs": 32921,
+    "avg_customer_msg_words": 18.8,
+    "dm_deflection_rate_pct": 71.89,
+    "customer_vocabulary_size": 19908,
+    "suitability_score": 241.79
+  },
+  {
+    "brand": "TMobileHelp",
+    "total_support_tweets": 34317,
+    "reconstructed_pairs": 34215,
+    "avg_customer_msg_words": 19.5,
+    "dm_deflection_rate_pct": 82.12,
+    "customer_vocabulary_size": 19645,
+    "suitability_score": 241.7
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "total_rows": 2811774,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "missing_values": {
+    "tweet_id": 0,
+    "author_id": 0,
+    "inbound": 0,
+    "created_at": 0,
+    "text": 0,
+    "response_tweet_id": 1040629,
+    "in_response_to_tweet_id": 794335
+  },
+  "missing_percentage": {
+    "tweet_id": 0.0,
+    "author_id": 0.0,
+    "inbound": 0.0,
+    "created_at": 0.0,
+    "text": 0.0,
+    "response_tweet_id": 37.01,
+    "in_response_to_tweet_id": 28.25
+  },
+  "inbound_distribution": {
+    "True": 1537843,
+    "False": 1273931
+  },
+  "unique_authors": 702777,
+  "total_brands": 108,
+  "top_20_brands": {
+    "AmazonHelp": 169840,
+    "AppleSupport": 106860,
+    "Uber_Support": 56270,
+    "SpotifyCares": 43265,
+    "Delta": 42253,
+    "Tesco": 38573,
+    "AmericanAir": 36764,
+    "TMobileHelp": 34317,
+    "comcastcares": 33031,
+    "British_Airways": 29361,
+    "SouthwestAir": 28977,
+    "VirginTrains": 27817,
+    "Ask_Spectrum": 25860,
+    "XboxSupport": 24557,
+    "sprintcare": 22381,
+    "hulu_support": 21872,
+    "sainsburys": 19466,
+    "GWRHelp": 19364,
+    "AskPlayStation": 19098,
+    "ChipotleTweets": 18749
+  },
+  "date_sample_start": "2017-10-31 22:10:47+00:00",
+  "date_sample_end": "2017-11-21 22:01:04+00:00",
+  "has_in_reply_to": 2017439,
+  "has_in_reply_to_pct": 71.75,
+  "has_response_tweet_id": 1771145,
+  "has_response_tweet_id_pct": 62.99
+}

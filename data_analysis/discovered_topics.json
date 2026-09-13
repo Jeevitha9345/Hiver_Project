@@ -1,0 +1,122 @@
+[
+  {
+    "topic_id": 0,
+    "top_words": [
+      "email",
+      "account",
+      "don",
+      "any",
+      "time",
+      "already",
+      "ve",
+      "product",
+      "back",
+      "call"
+    ]
+  },
+  {
+    "topic_id": 1,
+    "top_words": [
+      "de",
+      "que",
+      "el",
+      "la",
+      "en",
+      "por",
+      "un",
+      "lo",
+      "es",
+      "con"
+    ]
+  },
+  {
+    "topic_id": 2,
+    "top_words": [
+      "service",
+      "customer",
+      "customer service",
+      "worst",
+      "care",
+      "customer care",
+      "pathetic",
+      "poor",
+      "very",
+      "worst customer"
+    ]
+  },
+  {
+    "topic_id": 3,
+    "top_words": [
+      "delivery",
+      "today",
+      "delivered",
+      "package",
+      "says",
+      "day",
+      "day delivery",
+      "date",
+      "delivery date",
+      "yesterday"
+    ]
+  },
+  {
+    "topic_id": 4,
+    "top_words": [
+      "order",
+      "delivered",
+      "placed",
+      "cancel",
+      "cancelled",
+      "cancel order",
+      "placed order",
+      "refund",
+      "order number",
+      "number"
+    ]
+  },
+  {
+    "topic_id": 5,
+    "top_words": [
+      "le",
+      "je",
+      "est",
+      "pas",
+      "de",
+      "et",
+      "ai",
+      "pour",
+      "vous",
+      "colis"
+    ]
+  },
+  {
+    "topic_id": 6,
+    "top_words": [
+      "prime",
+      "day",
+      "shipping",
+      "day shipping",
+      "days",
+      "pay",
+      "next",
+      "membership",
+      "two",
+      "next day"
+    ]
+  },
+  {
+    "topic_id": 7,
+    "top_words": [
+      "thanks",
+      "response",
+      "reply",
+      "done",
+      "ok",
+      "hi",
+      "quick",
+      "great",
+      "much",
+      "appreciate"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Raw Large Datasets (>100MB)
+data/raw/
+data/processed/
+*.parquet.tmp
+*.csv.tmp
+
+# Credentials & Local Config
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp

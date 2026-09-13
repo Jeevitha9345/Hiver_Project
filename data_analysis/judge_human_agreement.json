@@ -1,0 +1,10 @@
+{
+  "num_evaluated": 50,
+  "exact_agreement_pct": 58.0,
+  "within_one_point_pct": 86.0,
+  "pearson_correlation": 0.1618,
+  "spearman_correlation": 0.1784,
+  "cohen_kappa": 0.0455,
+  "average_judge_score": 4.8,
+  "average_human_score": 4.34
+}

@@ -1,0 +1,108 @@
+{
+  "benchmark_date": "2026-09-13",
+  "elapsed_seconds": 31.7,
+  "evaluation_samples": 200,
+  "intent_classification": {
+    "majority_baseline": {
+      "accuracy": 0.175,
+      "macro_f1": 0.0426,
+      "weighted_f1": 0.0521
+    },
+    "tfidf_logistic_baseline": {
+      "accuracy": 0.675,
+      "macro_f1": 0.6718,
+      "weighted_f1": 0.6777
+    },
+    "main_sentence_transformer": {
+      "accuracy": 0.735,
+      "macro_f1": 0.7365,
+      "weighted_f1": 0.7382,
+      "macro_precision": 0.7588,
+      "macro_recall": 0.7365,
+      "per_class": {
+        "account_and_payment_security": {
+          "precision": 0.6774,
+          "recall": 0.84,
+          "f1": 0.75,
+          "support": 25
+        },
+        "delivery_tracking_delay": {
+          "precision": 0.7838,
+          "recall": 0.8286,
+          "f1": 0.8056,
+          "support": 35
+        },
+        "general_product_inquiry": {
+          "precision": 0.4595,
+          "recall": 0.68,
+          "f1": 0.5484,
+          "support": 25
+        },
+        "prime_and_subscription": {
+          "precision": 1.0,
+          "recall": 0.84,
+          "f1": 0.913,
+          "support": 25
+        },
+        "refund_and_cancellation": {
+          "precision": 0.8387,
+          "recall": 0.8667,
+          "f1": 0.8525,
+          "support": 30
+        },
+        "return_and_replacement": {
+          "precision": 0.6522,
+          "recall": 0.5,
+          "f1": 0.566,
+          "support": 30
+        },
+        "service_complaint_escalation": {
+          "precision": 0.9,
+          "recall": 0.6,
+          "f1": 0.72,
+          "support": 30
+        }
+      }
+    }
+  },
+  "retrieval": {
+    "num_evaluated": 200,
+    "avg_top1_similarity": 0.6279,
+    "mrr": 0.7507,
+    "recall_at_1": 0.66,
+    "recall_at_3": 0.845,
+    "recall_at_5": 0.885
+  },
+  "escalation": {
+    "accuracy": 0.9,
+    "escalate_precision": 0.9118,
+    "escalate_recall": 0.8158,
+    "escalate_f1": 0.8611,
+    "true_auto_handle": 118,
+    "over_escalations_fp": 6,
+    "false_auto_handles_fn": 14,
+    "true_escalations_tp": 62,
+    "false_auto_handle_rate": 0.1842,
+    "over_escalation_rate": 0.0484,
+    "confusion_matrix": [
+      [
+        118,
+        6
+      ],
+      [
+        14,
+        62
+      ]
+    ]
+  },
+  "judge_agreement": {
+    "num_evaluated": 50,
+    "exact_agreement_pct": 58.0,
+    "within_one_point_pct": 86.0,
+    "pearson_correlation": 0.1618,
+    "spearman_correlation": 0.1784,
+    "cohen_kappa": 0.0455,
+    "average_judge_score": 4.8,
+    "average_human_score": 4.34
+  }
+}
